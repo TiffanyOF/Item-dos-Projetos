@@ -3,7 +3,7 @@ var swiper = new Swiper(".swiper", {
     grabCursor:true,
     
     centeredSlides:true,
-    initialSlide: 1,
+    initialSlide: 0,
     speed: 600,
     preventClicks: true,
     slidesPerView: "auto",
@@ -27,4 +27,5 @@ var swiper = new Swiper(".swiper", {
         nextEl : ".swiper-button-next",
         prevEl : ".swiper-button-prev"
     },
+
 });
