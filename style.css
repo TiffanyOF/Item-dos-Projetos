@@ -97,24 +97,37 @@ body{
 .swiper-button-prev{
     background: rgb(75, 101, 175);
     border-radius: 30%;
+    opacity: .5;
     color: rgb(255, 255, 255);
     top: 47%;
     left: 30px;
     width: 60px;
     height: 60px;
+    transform: .5s;
+}
+
+.swiper-button-prev:hover{ 
+    transform: translateX(-30px) rotate (45deg);
+    opacity: 1;
 }
 
 
 .swiper-button-next{
     background: rgb(75, 101, 175);
     border-radius: 30%;
+    opacity: .5;
     color: rgb(255, 255, 255);
     top: 47%;
     right: 30px;
     width: 60px;
     height: 60px;
+    transform: .5s;
 }
 
+.swiper-button-next:hover{ 
+    transform: translateX(-30px) rotate (45deg);
+    opacity: 1;
+}
 
 
 
@@ -140,4 +153,5 @@ body{
     .swiper-slide{
         width: 200px;
     }
+
 }
