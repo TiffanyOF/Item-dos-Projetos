@@ -10,85 +10,77 @@
    </head>
 <body>
 
-     <div class="swiper">
- 
-  <div class="swiper-wrapper">
-
-    <!-- Slides -->
-    <div class="swiper-slide">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides com atributos de dados para o modal -->
+      <div class="swiper-slide" data-title="Jornal" data-text="O Projeto Jornal foi uma iniciativa para cobrir eventos da escola e da comunidade, promovendo a escrita e o jornalismo entre os alunos.">
         <img src="avatar.png" alt="jornal">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="avatar.png" alt="monitor">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="avatar.png" alt="gremio">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
+        <div class="project-title">Projeto Jornal</div>
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="Monitoria" data-text="A monitoria é um programa de apoio educacional onde alunos mais experientes ajudam outros colegas com dificuldades em matérias específicas.">
+        <img src="avatar.png" alt="monitor">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="Grêmio Estudantil" data-text="O Grêmio Estudantil é a entidade de representação dos estudantes, responsável por organizar eventos, defender os direitos dos alunos e promover a integração na escola.">
+        <img src="avatar.png" alt="gremio">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="A.E.E." data-text="A A.E.E. (Atendimento Educacional Especializado) oferece recursos e apoio pedagógico para alunos com necessidades especiais, garantindo uma educação inclusiva e de qualidade.">
         <img src="avatar.png" alt="aee">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="avatar.png" alt="anti-bullying">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="avatar.png" alt="eletivas">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="Anti-Bullying" data-text="O projeto Anti-Bullying promove ações e discussões para combater a violência e o assédio moral na escola, criando um ambiente mais seguro e respeitoso para todos.">
+        <img src="avatar.png" alt="anti-bullying">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="Eletivas" data-text="As eletivas são aulas temáticas opcionais que permitem aos alunos explorar seus interesses e aprofundar conhecimentos em áreas não-curriculares.">
+        <img src="avatar.png" alt="eletivas">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="Robótica" data-text="O clube de robótica estimula a criatividade e o raciocínio lógico, onde os alunos aprendem a construir e programar robôs para competições e projetos.">
         <img src="avatar.png" alt="robotica">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="avatar.png" alt="pgm">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="avatar.png" alt="olimpiadas">
-        <div class="title">
-          <span>title</span>
-        </div>
-    </div>
-    <div class="swiper-slide">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="PGM" data-text="PGM (Padrões de Gerenciamento) é um projeto focado em ensinar metodologias de organização e planejamento, preparando os alunos para o futuro profissional e acadêmico.">
+        <img src="avatar.png" alt="pgm">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="Olimpíadas do Conhecimento" data-text="Participação em olimpíadas acadêmicas de diversas áreas do conhecimento, incentivando o estudo e a competição saudável entre os alunos.">
+        <img src="avatar.png" alt="olimpiadas">
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
+      <div class="swiper-slide" data-title="SIBIM" data-text="O SIBIM (Sistema de Informação e Bibliotecas Integradas) é uma plataforma para gerenciar o acervo da biblioteca e facilitar o acesso dos alunos aos recursos de pesquisa.">
         <img src="avatar.png" alt="sibin">
-        <div class="title">
-          <span>title</span>
-        </div>
+        <div class="title"><span>Veja Mais</span></div>
+      </div>
     </div>
-  </div>
  
   
  
   <div class="swiper-pagination"></div>
 
- 
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
+
+  <!-- Modal que será preenchido dinamicamente -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modal-image" src="" alt="Imagem do Projeto" class="modal-image">
+        <div class="modal-text">
+          <h2 id="modal-title"></h2>
+          <p id="modal-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     
+
 </body>
 </html>
